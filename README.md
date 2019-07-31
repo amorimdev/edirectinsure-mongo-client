@@ -1,4 +1,4 @@
-# EDirestInsure Mongo Client
+# EDirectInsure Mongo Client
 
 This package is responsible to manage mongo operations
 

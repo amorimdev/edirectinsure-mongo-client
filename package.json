@@ -1,7 +1,7 @@
 {
   "name": "edirectinsure-mongo-client",
   "version": "1.0.0",
-  "description": "EDirestInsure Mongo client",
+  "description": "EDirectInsure Mongo client",
   "engines": {
     "node": ">=8.10.0"
   },
