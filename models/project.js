@@ -5,7 +5,8 @@ const Schema = Mongoose.Schema
 
 const Model = new Schema({
   name: {
-    type: String
+    type: String,
+    required: true
   },
   createdAt: {
     type: Date,
@@ -15,10 +16,13 @@ const Model = new Schema({
     type: Date
   },
   user: {
-    type: Schema.Types.ObjectId, ref: 'user'
+    type: Schema.Types.ObjectId,
+    ref: 'user',
+    required: true
   },
   tasks: [ {
-    type: Schema.Types.ObjectId, ref: 'task'
+    type: Schema.Types.ObjectId,
+    ref: 'task'
   } ]
 })
 

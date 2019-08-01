@@ -5,13 +5,16 @@ const Schema = Mongoose.Schema
 
 const Model = new Schema({
   name: {
-    type: String
+    type: String,
+    required: true
   },
   email: {
-    type: String
+    type: String,
+    required: true
   },
   password: {
-    type: String
+    type: String,
+    required: true
   },
   createdAt: {
     type: Date,
@@ -21,7 +24,8 @@ const Model = new Schema({
     type: Date
   },
   projects: [ {
-    type: Schema.Types.ObjectId, ref: 'project'
+    type: Schema.Types.ObjectId,
+    ref: 'project'
   } ]
 })
 

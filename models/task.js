@@ -10,7 +10,8 @@ const Model = new Schema({
     default: 'open'
   },
   description: {
-    type: String
+    type: String,
+    required: true
   },
   createdAt: {
     type: Date,
@@ -20,7 +21,9 @@ const Model = new Schema({
     type: Date
   },
   project: {
-    type: Schema.Types.ObjectId, ref: 'project'
+    type: Schema.Types.ObjectId,
+    ref: 'project',
+    required: true
   }
 })
 
