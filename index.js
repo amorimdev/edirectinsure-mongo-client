@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose')
 const url = process.env.MONGO_URL || 'mongodb://localhost:27017/edirectinsure'
-const config = { useNewUrlParser: true, useFindAndModify: false }
+const config = { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false }
 const LOG_TAG = 'LOG::[USER | MONGO]'
 
 module.exports.mongoClient = seneca => new Promise((resolve, reject) => {
